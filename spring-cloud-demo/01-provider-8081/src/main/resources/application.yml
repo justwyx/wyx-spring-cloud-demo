@@ -31,4 +31,4 @@ logging:
     org.hibernate.type.descriptor.sql.BasicBinder: trace
     # \u5728show-sql\u4E3Atrue\u65F6\u663E\u793A\u67E5\u8BE2\u7ED3\u679C
     org.hibernate.hql.internal.ast.exec.BasicExecutor: trace
-    com.abc: debug
+    com.wyx: debug

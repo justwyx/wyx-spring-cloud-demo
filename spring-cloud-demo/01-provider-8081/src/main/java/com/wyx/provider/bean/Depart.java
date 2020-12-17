@@ -1,4 +1,4 @@
-package com.wyx.spring.cloud.demo.api.bean;
+package com.wyx.provider.bean;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
