@@ -18,8 +18,13 @@
     </description>
 
     <modules>
-        <module>01-comsumer-8080</module>
-        <module>01-provider-8081</module>
+        <module>00-eurekaserver-8000</module>
+
+<!--        <module>01-consumer-8080</module>-->
+<!--        <module>01-provider-8081</module>-->
+
+        <module>02-consumer-8080</module>
+        <module>02-provider-8081</module>
     </modules>
 
 
