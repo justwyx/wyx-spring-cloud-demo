@@ -15,6 +15,18 @@
     <packaging>pom</packaging>
     <description>
         spring cloud api demo
+        00-eurekaserver-8000 : eureka注册中心
+
+        00-eurekaserver-8100
+        00-eurekaserver-8200
+        00-eurekaserver-8300 ： eureka 集群
+
+        01-consumer-8080
+        01-provider-8081 ：无注册中心 restTemplate 访问
+
+        02-consumer-8080
+        02-provider-8081 ：eureka注册中心 restTemplate 访问
+
     </description>
 
     <modules>
@@ -28,6 +40,10 @@
 
 <!--        <module>02-consumer-8080</module>-->
 <!--        <module>02-provider-8081</module>-->
+
+
+        <module>03-consumer-feign-8080</module>
+        <module>03-provider-8081</module>
     </modules>
 
 

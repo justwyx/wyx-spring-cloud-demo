@@ -7,10 +7,11 @@
 		<artifactId>spring-cloud-demo</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<artifactId>01-consumer-8080</artifactId>
+	<artifactId>03-consumer-feign-8080</artifactId>
 	<name>${artifactId}</name>
 	<description>
-		spring cloud 无注册中心 demo
+		spring cloud eureka 注册中心 demo
+		openfeign消费者
 	</description>
 
 	<dependencies>
@@ -24,6 +25,17 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<!--cloud eureka-client-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+		<!--cloud openfeign-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 	</dependencies>
 
