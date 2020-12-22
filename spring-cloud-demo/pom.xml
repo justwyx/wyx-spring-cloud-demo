@@ -42,8 +42,11 @@
 <!--        <module>02-provider-8081</module>-->
 
 
-        <module>03-consumer-feign-8080</module>
-        <module>03-provider-8081</module>
+<!--        <module>03-consumer-feign-8080</module>-->
+<!--        <module>03-provider-8081</module>-->
+<!--        <module>03-provider-8082</module>-->
+<!--        <module>03-provider-8083</module>-->
+<!--        <module>03-provider-8084</module>-->
     </modules>
 
 

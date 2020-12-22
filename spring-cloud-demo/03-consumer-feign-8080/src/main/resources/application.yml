@@ -14,6 +14,7 @@ feign:
         connectTimeout: 5000   # 指定Feign客户端连接提供者的超时时限
         readTimeout: 5000      # 指定Feign客户端连接上提供者后，向提供者进行提交请求，从提交时刻开始，到接收到响应，这个时段的超时时限
 
+# 可以根据不同的微服务设置不同的负载均衡策略
 # 修改负载均衡策略为：随机策略
 #abcmsc-provider-depart:
 #  ribbon:
