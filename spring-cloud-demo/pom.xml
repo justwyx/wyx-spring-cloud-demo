@@ -58,6 +58,8 @@
         04-consumer-feign-fallbackmethod-8080 ： feign 方式服务降级（方法级别）
         04-consumer-fallbackfactory-8080 ：feign 方式服务降级（类级别）
         04-consumer-fallbackfeign-8080 ：feign 方式服务降级（类级别）
+
+        04-consumer-dashboard-8080 : dashboard-监控仪表盘
     </description>
 
     <modules>
@@ -73,7 +75,7 @@
 <!--        <module>02-provider-8081</module>-->
 
 <!--        <module>03-consumer-feign-8080</module>-->
-        <module>03-provider-8081</module>
+<!--        <module>03-provider-8081</module>-->
 <!--        <module>03-provider-8082</module>-->
 <!--        <module>03-provider-8083</module>-->
 <!--        <module>03-provider-8084</module>-->
@@ -81,8 +83,9 @@
 <!--        <module>04-consumer-feign-fallbackmethod-8080</module>-->
 <!--        <module>04-consumer-fallbackmethod-8080</module>-->
 <!--        <module>04-consumer-fallbackfactory-8080</module>-->
-        <module>04-consumer-fallbackfeign-8080</module>
-<!--        <module>04-provider-8081</module>-->
+<!--        <module>04-consumer-fallbackfeign-8080</module>-->
+        <module>04-consumer-dashboard-8080</module>
+        <module>04-provider-8081</module>
     </modules>
 
 
