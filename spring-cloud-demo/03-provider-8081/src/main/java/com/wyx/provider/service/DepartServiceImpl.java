@@ -43,6 +43,11 @@ public class DepartServiceImpl implements DepartService {
 
 	@Override
 	public Depart getDepartById(int id) {
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		if (repository.existsById(id)) {
 			// 在DB中指定的id若不存在，该方法会抛出异常
 			return repository.getOne(id);
@@ -55,7 +60,7 @@ public class DepartServiceImpl implements DepartService {
 	@Override
 	public List<Depart> listAllDeparts() {
 		try {
-			Thread.sleep(5000);
+			Thread.sleep(4000);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}

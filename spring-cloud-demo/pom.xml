@@ -27,6 +27,37 @@
         02-consumer-8080
         02-provider-8081 ：eureka注册中心 restTemplate 访问
 
+        03: OpenFeign 与 Ribbon
+            OpenFeign : 声明式 REST 客户端:Feign 通过使用 JAX-RS(Java Api eXtensions for RESTful Web Services，简单来说，就是一种使用注解来实现 RESTful 的技术)或 SpringMVC 注解的装饰方 式，生成接口的动态实现。
+                Feign，假装，伪装。
+                OpenFeign 可以将提供者提供的 Restful 服务伪装为接口进行消费，消费者只需使用“feign 接口 + 注解”的方式即可直接调用提供者提供的 Restful 服务，而无需再使用 RestTemplate。
+                需要注意:
+                 该伪装的Feign接口是由消费者调用，与提供者没有任何关系。  Feign仅是一个伪客户端，其不会对请求做任何处理。
+                 Feign是通过注解的方式实现RESTful请求的。
+            Ribbon :
+                Ribbon 是 Netflix 公司的一个开源的负载均衡 项目，是一个客户端负载均衡器，运行在消费者端。
+                OpenFeign 也是运行在消费者端的，使用 Ribbon 进行负载均衡，所以 OpenFeign 直接内 置了 Ribbon。即在导入 OpenFeign 依赖后，无需再专门导入 Ribbon 依赖了。
+        03-consumer-feign-8080
+        03-provider-8081 : 超时设置
+        03-provider-8082
+        03-provider-8083
+        03-provider-8084 : 集群负载均衡测试
+
+        04: Hystrix 服务熔断与服务降级
+            熔断机制 :
+                熔断机制是服务雪崩的一种有效解决方案。常见的熔断有两种:
+                 预熔断
+                 即时熔断
+            服务降级 :
+                服务降级是请求发生问题后的一种增强用户体验的方式。
+                发生服务熔断，一定会发生服务降级。但发生服务降级，并不意味着一定是发生了服务 熔断。
+            Hystrix : Spring Cloud 是通过 Hystrix 来实现服务熔断与降级的。
+                在分布式环境中，许多服务依赖中的一些服务发生失败是不可避免的。Hystrix 是一 个库，通过添加延迟容忍和容错逻辑，帮助你控制这些分布式服务之间的交互。Hystrix 通过 隔离服务之间的访问点、停止跨服务的级联故障以及提供回退选项来实现这一点，所有这些 都可以提高系统的整体弹性。
+        # 需要注意，要用 //@EnableCircuitBreaker // 开启熔断器
+        04-consumer-fallbackmethod-8080 ： RestTemplate 方式服务降级（方法级别）
+        04-consumer-feign-fallbackmethod-8080 ： feign 方式服务降级（方法级别）
+        04-consumer-fallbackfactory-8080 ：feign 方式服务降级（类级别）
+        04-consumer-fallbackfeign-8080 ：feign 方式服务降级（类级别）
     </description>
 
     <modules>
@@ -41,12 +72,17 @@
 <!--        <module>02-consumer-8080</module>-->
 <!--        <module>02-provider-8081</module>-->
 
-
 <!--        <module>03-consumer-feign-8080</module>-->
-<!--        <module>03-provider-8081</module>-->
+        <module>03-provider-8081</module>
 <!--        <module>03-provider-8082</module>-->
 <!--        <module>03-provider-8083</module>-->
 <!--        <module>03-provider-8084</module>-->
+
+<!--        <module>04-consumer-feign-fallbackmethod-8080</module>-->
+<!--        <module>04-consumer-fallbackmethod-8080</module>-->
+<!--        <module>04-consumer-fallbackfactory-8080</module>-->
+        <module>04-consumer-fallbackfeign-8080</module>
+<!--        <module>04-provider-8081</module>-->
     </modules>
 
 
