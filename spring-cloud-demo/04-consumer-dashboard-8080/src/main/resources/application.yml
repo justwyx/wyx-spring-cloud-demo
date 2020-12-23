@@ -1,3 +1,6 @@
+server:
+  port: 8080
+
 spring:
   application:
     name: abcmsc-consumer-depart
@@ -13,10 +16,8 @@ feign:
       default:
         connectTimeout: 5000   # 指定Feign客户端连接提供者的超时时限
         readTimeout: 5000      # 指定Feign客户端连接上提供者后，向提供者进行提交请求，从提交时刻开始，到接收到响应，这个时段的超时时限
-
   hystrix:
     enabled: true # 开启Feign对Hystrix的支持
-
 hystrix:
   command:
     default: # 默认通用的
@@ -24,6 +25,8 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 10000 # hystrix超时时间 默认1秒
+  dashboard:
+    proxy-stream-allow-list: "*"
 
 # 开启actuator的hystrix.stream监控终端
 management:

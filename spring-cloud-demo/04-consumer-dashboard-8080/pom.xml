@@ -10,8 +10,7 @@
 	<artifactId>04-consumer-dashboard-8080</artifactId>
 	<name>${artifactId}</name>
 	<description>
-		spring cloud eureka 注册中心 demo
-		hystrix feign fall back method 消费者
+		hystrix dashboard 仪表盘客户端
 	</description>
 
 	<dependencies>
@@ -25,14 +24,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-		<!--boot test-->
+
+		<!--cloud openfeign-->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
-
-
 		<!--cloud netflix-eureka-client-->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -47,11 +44,6 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
-		</dependency>
-		<!--cloud openfeign-->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
 	</dependencies>
 
