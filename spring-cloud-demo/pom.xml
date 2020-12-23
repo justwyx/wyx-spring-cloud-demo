@@ -59,14 +59,21 @@
         04-consumer-fallbackfactory-8080 ：feign 方式服务降级（类级别）
         04-consumer-fallbackfeign-8080 ：feign 方式服务降级（类级别）
 
+        # 单机仪表盘，用处不大
         04-consumer-dashboard-8080 : dashboard-监控仪表盘
+        # 集群版仪表盘
+        00-hystrix-turbine-8888
+        04-consumer-turbine-client-8180
+        04-consumer-turbine-client-8280
     </description>
 
     <modules>
         <module>00-eurekaserver-8000</module>
 <!--        <module>00-eurekaserver-8100</module>-->
-<!--        <module>00-eurekaserver-8200</module>-->
-<!--        <module>00-eurekaserver-8300</module>-->
+        <!--        <module>00-eurekaserver-8200</module>-->
+        <!--        <module>00-eurekaserver-8300</module>-->
+
+<!--        <module>00-hystrix-turbine-8888</module>-->
 
 <!--        <module>01-consumer-8080</module>-->
 <!--        <module>01-provider-8081</module>-->
@@ -84,8 +91,11 @@
 <!--        <module>04-consumer-fallbackmethod-8080</module>-->
 <!--        <module>04-consumer-fallbackfactory-8080</module>-->
 <!--        <module>04-consumer-fallbackfeign-8080</module>-->
-        <module>04-consumer-dashboard-8080</module>
-        <module>04-provider-8081</module>
+<!--        <module>04-consumer-dashboard-8080</module>-->
+<!--        <module>04-consumer-turbine-client-8180</module>-->
+<!--        <module>04-consumer-turbine-client-8280</module>-->
+
+<!--        <module>04-provider-8081</module>-->
     </modules>
 
 
