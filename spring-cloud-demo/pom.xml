@@ -94,6 +94,8 @@
         00-zuul-filter-9000
         # zuul 令牌桶限流
         00-zuul-tokenbucket-9000
+        # zuul 多维请求限流
+        00-zuul-ratelimit-9000
     </description>
 
     <modules>
@@ -140,7 +142,8 @@
 <!--        <module>05-zuul-consumer-8380</module>-->
 <!--        <module>00-zuul-fallback-9000</module>-->
 <!--        <module>00-zuul-filter-9000</module>-->
-        <module>00-zuul-tokenbucket-9000</module>
+<!--        <module>00-zuul-tokenbucket-9000</module>-->
+        <module>00-zuul-ratelimit-9000</module>
     </modules>
 
 
