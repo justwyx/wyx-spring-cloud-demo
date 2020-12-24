@@ -92,6 +92,8 @@
         # zuul 请求过滤
             # 在服务路由之前、中、后，可以对请求进行过滤，使其只能访问它应该访问到的资源，增强安全性。此时需要通过 ZuulFilter 过滤器来实现对外服务的安全控制。
         00-zuul-filter-9000
+        # zuul 令牌桶限流
+        00-zuul-tokenbucket-9000
     </description>
 
     <modules>
@@ -137,7 +139,8 @@
 <!--        <module>05-zuul-consumer-8280</module>-->
 <!--        <module>05-zuul-consumer-8380</module>-->
 <!--        <module>00-zuul-fallback-9000</module>-->
-        <module>00-zuul-filter-9000</module>
+<!--        <module>00-zuul-filter-9000</module>-->
+        <module>00-zuul-tokenbucket-9000</module>
     </modules>
 
 
