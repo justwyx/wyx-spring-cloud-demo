@@ -96,21 +96,21 @@
         00-zuul-tokenbucket-9000
         # zuul 多维请求限流
         00-zuul-ratelimit-9000
+        # zuul 灰度发布
+        00-zuul-gray-9000
     </description>
 
     <modules>
         <module>00-eurekaserver-8000</module>
 <!--        <module>00-eurekaserver-8100</module>-->
-        <!--        <module>00-eurekaserver-8200</module>-->
-        <!--        <module>00-eurekaserver-8300</module>-->
-
-
+<!--        <module>00-eurekaserver-8200</module>-->
+<!--        <module>00-eurekaserver-8300</module>-->
 
 <!--        <module>01-consumer-8080</module>-->
 <!--        <module>01-provider-8081</module>-->
 
 <!--        <module>02-consumer-8080</module>-->
-        <module>02-provider-8081</module>
+<!--        <module>02-provider-8081</module>-->
 
 <!--        <module>03-consumer-feign-8080</module>-->
 <!--        <module>03-provider-8081</module>-->
@@ -135,15 +135,16 @@
 <!--        <module>04-provider-8081</module>-->
 
 <!--        <module>00-zuul-9000</module>-->
-        <module>05-zuul-consumer-8080</module>
-        <module>05-zuul-consumer-8090</module>
+<!--        <module>05-zuul-consumer-8080</module>-->
+<!--        <module>05-zuul-consumer-8090</module>-->
 <!--        <module>05-zuul-consumer-8180</module>-->
 <!--        <module>05-zuul-consumer-8280</module>-->
 <!--        <module>05-zuul-consumer-8380</module>-->
 <!--        <module>00-zuul-fallback-9000</module>-->
 <!--        <module>00-zuul-filter-9000</module>-->
 <!--        <module>00-zuul-tokenbucket-9000</module>-->
-        <module>00-zuul-ratelimit-9000</module>
+<!--        <module>00-zuul-ratelimit-9000</module>-->
+<!--        <module>00-zuul-gray-9000</module>-->
     </modules>
 
 
