@@ -1,4 +1,4 @@
-package com.wyx.provider.bean;
+package com.wyx.provider038081.bean;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;

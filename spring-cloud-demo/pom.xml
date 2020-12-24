@@ -58,7 +58,6 @@
         04-consumer-feign-fallbackmethod-8080 ： feign 方式服务降级（方法级别）
         04-consumer-fallbackfactory-8080 ：feign 方式服务降级（类级别）
         04-consumer-fallbackfeign-8080 ：feign 方式服务降级（类级别）
-
         # 单机-仪表盘，用处不大
         04-consumer-dashboard-8080 : dashboard-监控仪表盘
         # 集群版-仪表盘
@@ -71,7 +70,19 @@
         04-consumer-turbine-client-8480
         04-consumer-turbine-client-8580
         04-consumer-turbine-client-8680
+        # 发送服务降级警报
+        04-consumer-alarm-8080
 
+        # zuul
+        # 网关是系统唯一对外的入口，介于客户端与服务器端之间，用于对请求进行鉴权、限流、 路由、监控等功能。
+        # Zuul 主要提供了对请求的路由与过滤功能。
+            # 路由:将外部请求转发到具体的微服务实例上，是外部访问微服务的统一入口。
+            # 过滤:对请求的处理过程进行干预，对请求进行校验、鉴权等处理。
+
+        # zuul 路由
+        00-zuul-9000
+        05-zuul-consumer-8080
+        05-zuul-consumer-8090
     </description>
 
     <modules>
@@ -86,7 +97,7 @@
 <!--        <module>01-provider-8081</module>-->
 
 <!--        <module>02-consumer-8080</module>-->
-<!--        <module>02-provider-8081</module>-->
+        <module>02-provider-8081</module>
 
 <!--        <module>03-consumer-feign-8080</module>-->
 <!--        <module>03-provider-8081</module>-->
@@ -99,20 +110,20 @@
 <!--        <module>04-consumer-fallbackfactory-8080</module>-->
 <!--        <module>04-consumer-fallbackfeign-8080</module>-->
 <!--        <module>04-consumer-dashboard-8080</module>-->
-
 <!--        <module>00-hystrix-turbine-8888</module>-->
 <!--        <module>04-consumer-turbine-client-8180</module>-->
 <!--        <module>04-consumer-turbine-client-8280</module>-->
-
 <!--        <module>00-hystrix-turbine-7777</module>-->
 <!--        <module>04-consumer-turbine-client-8380</module>-->
 <!--        <module>04-consumer-turbine-client-8480</module>-->
 <!--        <module>04-consumer-turbine-client-8580</module>-->
 <!--        <module>04-consumer-turbine-client-8680</module>-->
+<!--        <module>04-consumer-alarm-8080</module>-->
+<!--        <module>04-provider-8081</module>-->
 
-        <module>04-consumer-alarm-8080</module>
-
-        <module>04-provider-8081</module>
+        <module>00-zuul-9000</module>
+        <module>05-zuul-consumer-8080</module>
+        <module>05-zuul-consumer-8090</module>
     </modules>
 
 

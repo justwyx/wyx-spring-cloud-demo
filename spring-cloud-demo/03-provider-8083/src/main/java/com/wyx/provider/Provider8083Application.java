@@ -1,4 +1,4 @@
-package com.wyx.provider;
+package com.wyx.provider038081;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

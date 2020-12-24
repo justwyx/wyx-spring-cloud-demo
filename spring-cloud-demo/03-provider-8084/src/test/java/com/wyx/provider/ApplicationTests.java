@@ -1,4 +1,4 @@
-package com.wyx.provider;
+package com.wyx.provider038081;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

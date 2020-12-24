@@ -1,0 +1,23 @@
+# server
+server:
+  port: 9000
+# spring
+spring:
+  application:
+    name: hystrix-turbine
+# eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka
+# zuul
+zuul:
+  routes:
+    # 指定微服务的路由规则
+    abcmsc-consumer-depart-8080: /wyx8080/**
+    abcmsc-consumer-depart-8090: /wyx8090/**
+  #ignored-services: abcmsc-consumer-depart-8080 # 屏蔽指定微服务名称
+  ignored-services: "*" #屏蔽所有微服务名称
+  prefix: /wyx # 指定统一的前辍
+  ignored-patterns: /**/list/** # 屏蔽指定的URI
+  sensitive-headers: token # 屏蔽掉指定的敏感头信息，其会将原来默认的Cookie、SetCookie、Authorization敏感头信息放开

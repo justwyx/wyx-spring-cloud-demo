@@ -1,7 +1,7 @@
-package com.wyx.provider.controller;
+package com.wyx.provider038081.controller;
 
-import com.wyx.provider.service.DepartService;
-import com.wyx.provider.bean.Depart;
+import com.wyx.provider038081.service.DepartService;
+import com.wyx.provider038081.bean.Depart;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
