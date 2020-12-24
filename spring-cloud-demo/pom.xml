@@ -104,11 +104,13 @@
 <!--        <module>04-consumer-turbine-client-8180</module>-->
 <!--        <module>04-consumer-turbine-client-8280</module>-->
 
-        <module>00-hystrix-turbine-7777</module>
-        <module>04-consumer-turbine-client-8380</module>
-        <module>04-consumer-turbine-client-8480</module>
-        <module>04-consumer-turbine-client-8580</module>
-        <module>04-consumer-turbine-client-8680</module>
+<!--        <module>00-hystrix-turbine-7777</module>-->
+<!--        <module>04-consumer-turbine-client-8380</module>-->
+<!--        <module>04-consumer-turbine-client-8480</module>-->
+<!--        <module>04-consumer-turbine-client-8580</module>-->
+<!--        <module>04-consumer-turbine-client-8680</module>-->
+
+        <module>04-consumer-alarm-8080</module>
 
         <module>04-provider-8081</module>
     </modules>
