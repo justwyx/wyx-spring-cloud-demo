@@ -83,6 +83,12 @@
         00-zuul-9000
         05-zuul-consumer-8080
         05-zuul-consumer-8090
+        # zuul 负载均衡
+        05-zuul-consumer-8180
+        05-zuul-consumer-8280
+        05-zuul-consumer-8380
+        # zuul 服务降级
+        00-zuul-fallback-9000
     </description>
 
     <modules>
@@ -122,8 +128,12 @@
 <!--        <module>04-provider-8081</module>-->
 
 <!--        <module>00-zuul-9000</module>-->
-<!--        <module>05-zuul-consumer-8080</module>-->
-<!--        <module>05-zuul-consumer-8090</module>-->
+        <module>05-zuul-consumer-8080</module>
+        <module>05-zuul-consumer-8090</module>
+<!--        <module>05-zuul-consumer-8180</module>-->
+<!--        <module>05-zuul-consumer-8280</module>-->
+<!--        <module>05-zuul-consumer-8380</module>-->
+        <module>00-zuul-fallback-9000</module>
     </modules>
 
 

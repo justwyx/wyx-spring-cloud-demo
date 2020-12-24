@@ -4,7 +4,7 @@ server:
 # spring
 spring:
   application:
-    name: hystrix-turbine
+    name: abcmsc-zuul-depart
 # eureka
 eureka:
   client:
@@ -16,6 +16,7 @@ zuul:
     # 指定微服务的路由规则
     abcmsc-consumer-depart-8080: /wyx8080/**
     abcmsc-consumer-depart-8090: /wyx8090/**
+    abcmsc-consumer-depart: /wyx123/**
   #ignored-services: abcmsc-consumer-depart-8080 # 屏蔽指定微服务名称
   ignored-services: "*" #屏蔽所有微服务名称
   prefix: /wyx # 指定统一的前辍
