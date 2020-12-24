@@ -13,7 +13,6 @@
 		spring cloud eureka server demo
 	</description>
 
-
 	<dependencies>
 		<!--cloud netflix-eureka-server-->
 		<dependency>

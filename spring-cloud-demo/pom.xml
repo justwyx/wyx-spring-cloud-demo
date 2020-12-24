@@ -121,9 +121,9 @@
 <!--        <module>04-consumer-alarm-8080</module>-->
 <!--        <module>04-provider-8081</module>-->
 
-        <module>00-zuul-9000</module>
-        <module>05-zuul-consumer-8080</module>
-        <module>05-zuul-consumer-8090</module>
+<!--        <module>00-zuul-9000</module>-->
+<!--        <module>05-zuul-consumer-8080</module>-->
+<!--        <module>05-zuul-consumer-8090</module>-->
     </modules>
 
 
