@@ -203,13 +203,14 @@
                 <scope>import</scope>
             </dependency>
 
-            <!--修改MySQL驱动版本-->
+            <!--MySQL驱动版本-->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql-connector-java.version}</version>
                 <scope>runtime</scope>
             </dependency>
+            <!--数据库连接池-->
             <dependency>
                 <groupId>com.alibaba</groupId>
                 <artifactId>druid</artifactId>
