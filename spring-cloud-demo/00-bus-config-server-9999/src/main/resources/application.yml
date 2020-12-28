@@ -12,8 +12,6 @@ spring:
           timeout: 5
           # 指定要操作的git远程库分支，默认master
           default-label: master
-          username: 1012765202@qq.com
-          password: Wyx1994612.github
   # 指定要连接的kafka集群
   kafka:
     bootstrap-servers: kafka1:9092,kafka2:9093,kafka3:9094
