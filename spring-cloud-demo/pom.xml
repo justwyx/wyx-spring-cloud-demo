@@ -107,10 +107,14 @@
         06-config-consumer : 读取config 服务，不能动态更新配置
         06-bus-config-provider
         06-bus-config-consumer : bus消息总线服务，需要 /actuator/bus-refresh刷新，添加 @RefreshScope注解
+
+        # 07 服务链路追踪
+        07-sleuth-provider-8081
+        07-sleuth-consumer-8080 : sleuth 日志测试demo
     </description>
 
     <modules>
-<!--        <module>00-eurekaserver-8000</module>-->
+        <module>00-eurekaserver-8000</module>
 <!--        <module>00-eurekaserver-8100</module>-->
 <!--        <module>00-eurekaserver-8200</module>-->
 <!--        <module>00-eurekaserver-8300</module>-->
@@ -156,12 +160,15 @@
 <!--        <module>00-zuul-gray-9000</module>-->
 
 <!--        <module>00-config-server-9999</module>-->
-        <module>00-bus-config-server-9999</module>
-        <module>06-config-eureka-server</module>
+<!--        <module>00-bus-config-server-9999</module>-->
+<!--        <module>06-config-eureka-server</module>-->
 <!--        <module>06-config-provider</module>-->
 <!--        <module>06-config-consumer</module>-->
-        <module>06-bus-config-provider</module>
-        <module>06-bus-config-consumer</module>
+<!--        <module>06-bus-config-provider</module>-->
+<!--        <module>06-bus-config-consumer</module>-->
+
+<!--        <module>07-sleuth-consumer-8080</module>-->
+<!--        <module>07-sleuth-provider-8081</module>-->
     </modules>
 
 
