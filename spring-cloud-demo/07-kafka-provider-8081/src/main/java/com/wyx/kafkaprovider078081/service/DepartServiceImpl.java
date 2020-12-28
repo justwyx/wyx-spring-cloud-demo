@@ -1,7 +1,7 @@
-package com.wyx.viaprovider078081.service;
+package com.wyx.kafkaprovider078081.service;
 
-import com.wyx.viaprovider078081.repository.DepartRepository;
-import com.wyx.viaprovider078081.bean.Depart;
+import com.wyx.kafkaprovider078081.repository.DepartRepository;
+import com.wyx.kafkaprovider078081.bean.Depart;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

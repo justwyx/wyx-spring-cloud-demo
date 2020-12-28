@@ -1,6 +1,6 @@
-package com.wyx.viaconsumer078080.controller;
+package com.wyx.kafkaconsumer078080.controller;
 
-import com.wyx.viaconsumer078080.bean.Depart;
+import com.wyx.kafkaconsumer078080.bean.Depart;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;

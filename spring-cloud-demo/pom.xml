@@ -110,7 +110,14 @@
 
         # 07 服务链路追踪
         07-sleuth-provider-8081
-        07-sleuth-consumer-8080 : sleuth 日志测试demo
+        07-sleuth-consumer-8080 : sleuth 日志测试-demo
+        07-via-consumer-8080
+        07-via-provider-8081 : via方式发送日志-demo
+        07-kafka-consumer-8080
+        07-kafka-provider-8081 : kafka方式发送日志-demo
+            # 注意zipkin的启动方式
+            # cd /opt/tools/zipkin
+            # java -DKAFKA_BOOTSTRAP_SERVERS=kafka1:9092 -jar zipkin.jar
     </description>
 
     <modules>
@@ -169,6 +176,10 @@
 
 <!--        <module>07-sleuth-consumer-8080</module>-->
 <!--        <module>07-sleuth-provider-8081</module>-->
+<!--        <module>07-via-consumer-8080</module>-->
+<!--        <module>07-via-provider-8081</module>-->
+        <module>07-kafka-consumer-8080</module>
+        <module>07-kafka-provider-8081</module>
     </modules>
 
 

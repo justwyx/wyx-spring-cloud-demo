@@ -1,4 +1,4 @@
-package com.wyx.viaconsumer078080.configure;
+package com.wyx.kafkaconsumer078080.configure;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;

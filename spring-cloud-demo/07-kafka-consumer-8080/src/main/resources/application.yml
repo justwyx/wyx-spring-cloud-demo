@@ -1,0 +1,24 @@
+server:
+  port: 8082
+
+# spring
+spring:
+  application:
+    name: abcmsc-consumer-depart
+  # zipkin
+  zipkin:
+    sender:
+      type: kafka # 指定zipkin服务器的消息发送者是kafka
+  # sleuth
+  sleuth:
+    sampler:
+      probability: 1.0 # 设置采样比例为1.0，即全部都需要，默认0.1
+  # kafka
+  kafka:
+    bootstrap-servers: kafka1:9092,kafka2:9093,kafka3:9094
+
+# eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8000/eureka

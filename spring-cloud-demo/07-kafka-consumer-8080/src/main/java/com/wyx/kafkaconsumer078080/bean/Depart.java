@@ -1,4 +1,4 @@
-package com.wyx.viaconsumer078080.bean;
+package com.wyx.kafkaconsumer078080.bean;
 
 import lombok.Data;
 

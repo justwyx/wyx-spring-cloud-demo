@@ -1,7 +1,7 @@
-package com.wyx.viaprovider078081.controller;
+package com.wyx.kafkaprovider078081.controller;
 
-import com.wyx.viaprovider078081.service.DepartService;
-import com.wyx.viaprovider078081.bean.Depart;
+import com.wyx.kafkaprovider078081.service.DepartService;
+import com.wyx.kafkaprovider078081.bean.Depart;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;

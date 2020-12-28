@@ -1,6 +1,6 @@
-package com.wyx.viaprovider078081.repository;
+package com.wyx.kafkaprovider078081.repository;
 
-import com.wyx.viaprovider078081.bean.Depart;
+import com.wyx.kafkaprovider078081.bean.Depart;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 // 第一个泛型是，当前Repository所操作的对象的类型
